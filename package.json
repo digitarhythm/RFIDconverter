@@ -1,0 +1,17 @@
+{
+  "name": "rfidconverter",
+  "version": "0.1.0",
+  "description": "RFID converter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "RFID"
+  ],
+  "author": "Hajime Oh-yake",
+  "license": "MIT",
+  "dependencies": {
+    "terffee": "^1.2.14"
+  }
+}
