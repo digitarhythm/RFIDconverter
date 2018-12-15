@@ -17,7 +17,7 @@ epcdecode = rfid.decode([EPC code(length 24)])
 ## Backend
 import module from npm
 ```
-$ npm i --save RFIDconverter
+$ npm i --save rfidconverter
 ```
 
 require module
