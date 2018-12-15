@@ -8,9 +8,9 @@ write to HTML file.
 <script type="text/javascript" src="RFIDconverter.min.js"></script>
 ```
 
-Usage(CoffeeScript):
-rfid = new RFIDconverter()
-epcdecode = rfid.decode([EPC code(length 24)])
+Usage(CoffeeScript):  
+rfid = new RFIDconverter()  
+epcdecode = rfid.decode([EPC code(length 24)])  
 
 ## Backend
 import module from npm
