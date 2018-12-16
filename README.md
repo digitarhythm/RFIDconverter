@@ -22,7 +22,7 @@ $ npm i --save rfidconverter
 
 require module
 ```
-rfid = require("RFIDconverter")
+rfid = require("rfidconverter")
 epcdecode = rfid.decode([EPC code(length 24)])
 
 ```
