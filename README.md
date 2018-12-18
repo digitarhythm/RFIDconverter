@@ -25,6 +25,15 @@ require module
 rfid = require("rfidconverter")
 epcdecode = rfid.decode([EPC code(length 24)])
 ```
+## Return code
+return to object
+- Header
+- Filter
+- Partition
+- GS1Code
+- ItemCode
+- SerialNumber
+- JanCode
 ----
 Licence
 
