@@ -61,7 +61,7 @@ class RFIDconverter
       GS1Code     : result[3].toString()
       ItemCode    : result[4].toString()
       SerialNumber: result[5].toString()
-      jancode     : jancode.toString()
+      JanCode     : jancode.toString()
 
     return epcdecode
 
