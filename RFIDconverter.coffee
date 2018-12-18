@@ -7,7 +7,6 @@ class RFIDconverter
   decode:(epc)->
     jancodedigit = (digitseed)->
       arr = Array.from(digitseed)
-      console.log(arr)
       odd = 0
       mod = 0
       for i in [0...arr.length]
@@ -16,7 +15,6 @@ class RFIDconverter
         else
           odd += parseInt(arr[i])
       a = (mod*3+odd).toString()
-      console.log a
       cd = 10 - parseInt(((mod * 3+odd).toString()).substr(-1))
       return if (cd == 10) then 0 else cd
 
@@ -35,8 +33,6 @@ class RFIDconverter
     for num in codearr
       bit = ("00000000"+(parseInt(num, 16).toString(2))).slice(-8)
       bitcode += bit
-
-    console.log bitcode.length
 
     start = 0
     result = []
@@ -59,13 +55,13 @@ class RFIDconverter
     jancode = result[3]+result[4]+jancodedigit(result[3]+result[4])
 
     epcdecode =
-      Header      : parseInt(result[0], 10)
-      Filter      : parseInt(result[1], 10)
-      Partition   : parseInt(result[2], 10)
-      GS1Code     : parseInt(result[3], 10)
-      ItemCode    : parseInt(result[4], 10)
-      SerialNumber: parseInt(result[5], 10)
-      jancode     : jancode
+      Header      : result[0].toString()
+      Filter      : result[1].toString()
+      Partition   : result[2].toString()
+      GS1Code     : result[3].toString()
+      ItemCode    : result[4].toString()
+      SerialNumber: result[5].toString()
+      jancode     : jancode.toString()
 
     return epcdecode
 
