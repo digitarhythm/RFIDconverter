@@ -1,6 +1,6 @@
 {
   "name": "rfidconverter",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "RFID converter",
   "main": "RFIDconverter.min.js",
   "scripts": {
